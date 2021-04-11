@@ -31,4 +31,4 @@
 
 &nbsp;
 
-<img src="https://user-images.githubusercontent.com/71772559/113493868-cd59b100-94b9-11eb-8506-64061203ce08.gif" width="100%" />
+<img src="https://github.com/jnerydesigner/desafio01-criando-um-projeto-do-zero/blob/main/assets/site-next.gif" width="100%" />
