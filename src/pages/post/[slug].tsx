@@ -219,6 +219,13 @@ export const getStaticProps: GetStaticProps = async ({
     }
   );
 
+  const contentBody = response.data.content.map(content => {
+    return {
+      heading: content.heading,
+      body: [...content.body],
+    };
+  });
+
   const post = {
     uid: response.uid,
     first_publication_date: response.first_publication_date,
@@ -230,12 +237,7 @@ export const getStaticProps: GetStaticProps = async ({
       banner: {
         url: response.data.banner.url,
       },
-      content: response.data.content.map(content => {
-        return {
-          heading: content.heading,
-          body: [...content.body],
-        };
-      }),
+      content: contentBody,
     },
   };
 
